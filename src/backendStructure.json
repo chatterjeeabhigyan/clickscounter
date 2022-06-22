@@ -1,0 +1,35 @@
+{
+    "backend": {
+        "URL": "http://localhost:8000",
+        "createUser": {
+            "method": "POST",
+            "Endpoint": "/user/create"
+        },
+        "LoginUser": {
+            "method": "POST",
+            "Endpoint": "/user/login"
+        },
+        "deleteUser": {
+            "method": "DELETE",
+            "Endpoint": "/user/delete"
+        },
+        "getUser": {
+            "method": "GET",
+            "Endpoint": "/user/get"
+        },
+        "update": {
+            "highestcps": {
+                "method": "PATCH",
+                "Endpoint": "/user/update/highestcps"
+            },
+            "lasttest": {
+                "method": "PATCH",
+                "Endpoint": "/user/update/lasttest"
+            },
+            "teststaken": {
+                "method": "PATCH",
+                "Endpoint": "/user/update/teststaken"
+            }
+        }
+    }
+}
